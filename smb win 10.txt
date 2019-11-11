@@ -1,0 +1,4 @@
+sc.exe qc lanmanworkstation
+Set-SmbServerConfiguration -EnableSMB2Protocol $false
+sc.exe config lanmanworkstation depend= bowser/mrxsmb10/nsi
+sc.exe config mrxsmb20 start= disabled
