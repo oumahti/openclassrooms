@@ -1,3 +1,4 @@
+[Description: Ces commandes permets de resoudre le probleme du partage sur windows 10]
 sc.exe qc lanmanworkstation
 Set-SmbServerConfiguration -EnableSMB2Protocol $false
 sc.exe config lanmanworkstation depend= bowser/mrxsmb10/nsi
